@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+<meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />
+<meta name="description" content="This document is an example of JavaScript Form Validation using a sample registration form. " />
+<link rel='stylesheet' href='FormDangKi.css' type='text/css' />
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
+	<script src="change_img.js"></script>
+	
+</head>
+
+<body onload="document.registration.userid.focus();">
+	<div class="login">
+		
+			<p><a href=""> Đăng Kí</a>	| 	<a href=""> Đăng Nhập</a></p>
+		
+	</div>
+
+	<div class="btn-fixed">
+		<button onclick="topFunction()" id="myBtn">
+			<img src="top-arrow-.png">
+		</button>
+	</div>
+	<div class="top">
+		<div class="logo">
+			<img src="logo_mobile.png">
+		</div>
+		<div class="search">
+			<input type="text" name="" placeholder="Từ khóa tìm kiếm...">
+			<div class="btn-search">
+				<img src="search.png" alt="">
+			</div>
+		</div>
+		<div class="cart">
+			<img src="shopping-cart.png" alt="">
+			<span>(0)</span>
+			<span>Sản Phẩm</span>
+		</div>
+	</div>
+	
+	<div class="header">
+		<div class="head">
+			<a href="main.html"><h4>TRANG CHỦ</h4></a>
+		</div>
+		<div class="head">
+			<a href="kho_sach.html"><h4>CHƯƠNG TRÌNH KHUYẾN MÃI</h4></a>
+		</div>
+		
+		<div class="head">
+			<a href="tin_tuc_3.html"><h4>TIN TỨC</h4></a>
+		</div>
+		<div class="head">
+			<h4>LIÊN HỆ</h4>
+		</div>
+		<div class="cart">
+			<img src="phone-typical.png" alt="">
+			<span>0168 4122 720</span>
+			
+		</div>
+	</div>
+	<div class="dang_ki">
+		<h1>Mẫu Đăng Kí </h1>
+Use tab keys to move from one input field to the next.
+		<form name='registration' onSubmit="return formValidation();">
+<ul>
+<li><label for="userid">User id:</label></li>
+<li><input type="text" name="userid" size="12" /></li>
+<li><label for="passid">Password:</label></li>
+<li><input type="password" name="passid" size="12" title="Wrong"/></li>
+<li><label for="username">Tên:</label></li>
+<li><input type="text" name="username" size="50" /></li>
+<li><label for="address">Địa Chỉ:</label></li>
+<li><input type="text" name="address" size="50" /></li>
+<li><label for="country">Thành Phố:</label></li>
+<li><select name="country">
+<option selected="" value="Default">(Vui Lòng Chọn Thành Phố Bạn Sống)</option>
+<option value="AF">Hà Nội</option>
+<option value="AL">TP.HCM</option>
+<option value="DZ">Đà Nẵng</option>
+<option value="AS">Cần Thơ</option>
+</select></li>
+<li><label for="zip">ZIP Code:</label></li>
+<li><input type="text" name="zip" /></li>
+<li><label for="email">Email:</label></li>
+<li><input type="text" name="email" size="50" /></li>
+<li><label id="gender">Giới tính:</label></li>
+<li><input type="radio" name="msex" value="Male" /><span>Nam</span></li>
+<li><input type="radio" name="fsex" value="Female" /><span>Nữ</span></li>
+<li><label>Ngôn Ngữ:</label></li>
+<li><input type="checkbox" name="en" value="en" checked /><span>Việt Nam</span></li>
+<li><input type="checkbox" name="nonen" value="noen" /><span>No Việt Nam</span></li>
+<li><label for="desc">Giới Thiệu:</label></li>
+<li><textarea name="desc" id="desc"></textarea></li>
+<li><input type="submit" name="submit" value="Submit" /></li>
+</ul>
+</form>
+
+	</div>
+	
+</body>
+
+</html>

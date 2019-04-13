@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+<meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />
+<meta name="description" content="This document is an example of JavaScript Form Validation using a sample registration form. " />
+<link rel='stylesheet' href='FormDangKi.css' type='text/css' />
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
+	<script src="change_img.js"></script>
+	
+</head>
+
+<body onload="document.registration.userid.focus();">
+	<div class="login">
+		
+			<p><a href="dang_ki.html"> Đăng Kí</a>	| 	<a href="dang_nhap.html"> Đăng Nhập</a></p>
+		
+	</div>
+
+	<div class="btn-fixed">
+		<button onclick="topFunction()" id="myBtn">
+			<img src="top-arrow-.png">
+		</button>
+	</div>
+	<div class="top">
+		<div class="logo">
+			<img src="logo_mobile.png">
+		</div>
+		<div class="search">
+			<input type="text" name="" placeholder="Từ khóa tìm kiếm...">
+			<div class="btn-search">
+				<img src="search.png" alt="">
+			</div>
+		</div>
+		<div class="cart">
+			<img src="shopping-cart.png" alt="">
+			<span>(0)</span>
+			<span>Sản Phẩm</span>
+		</div>
+	</div>
+	
+	<div class="header">
+		<div class="head">
+			<a href="main.html"><h4>TRANG CHỦ</h4></a>
+		</div>
+		<div class="head">
+			<a href="kho_sach.html"><h4>CHƯƠNG TRÌNH KHUYẾN MÃI</h4></a>
+		</div>
+		
+		<div class="head">
+			<a href="tin_tuc_3.html"><h4>TIN TỨC</h4></a>
+		</div>
+		<div class="head">
+			<h4>LIÊN HỆ</h4>
+		</div>
+		<div class="cart">
+			<img src="phone-typical.png" alt="">
+			<span>0168 4122 720</span>
+			
+		</div>
+	</div>
+	<div class="dang_ki">
+		<h1>Đăng Nhập </h1>
+		<form name='registration' onSubmit="return formValidation();">
+<ul>
+	<br>
+
+<li><label for="userid">User id:</label></li>
+<li><input type="text" name="userid" size="12" /></li>
+<br>
+<li><label for="passid">Password:</label></li>
+<li><input type="password" name="passid" size="12" title="Wrong"/></li>
+<br>
+<li><input type="submit" name="submit" value="Submit" onclick="warning2()"  /></li>
+</ul>
+</form>
+
+	</div>
+	
+</body>
+
+</html>
